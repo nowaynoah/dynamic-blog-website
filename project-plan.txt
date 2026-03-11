@@ -1,0 +1,17 @@
+Dynamic Blog Website - Project Plan
+
+Project Goal:
+Build a dynamic, multi-page blog that allows for the creation, reading, updating, and deleting of blog posts using JavaScript and local storage.
+
+Main Pages:
+index.html - Homepage that serves as the base for navigating to different parts of the website and blog posts.
+new-post.html - Page where users can create new blog posts to be published.
+post.html - Page used to view and/or edit a specific blog post.
+
+Core Features:
+Create blog posts
+Display blog posts on the homepage
+View singular blog posts
+Edit existing blog posts
+Delete blog posts
+Store all blog post data using browswer storage
