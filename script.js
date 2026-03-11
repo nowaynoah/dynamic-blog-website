@@ -116,3 +116,23 @@ if (editPostForm) {
         window.location.href = "index.html";
     });
 }
+
+const deletePostButton = document.getElementById("delete-post");
+
+if (deletePostButton) {
+    deletePostButton.addEventListener("click", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const postId = urlParams.get("id");
+
+        const posts = JSON.parse(localStorage.getItem("posts")) || [];
+
+        const filteredPosts = posts.filter(function (post) {
+            return post.id !== postId;
+        });
+
+        localStorage.setItem("posts", JSON.stringify(filteredPosts));
+
+        alert("Post deleted successfully.");
+        window.location.href = "index.html";
+    });
+}
