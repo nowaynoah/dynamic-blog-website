@@ -30,3 +30,19 @@ main {
 #posts-container h2 {
     text-align: center;
 }
+
+#new-post-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    font-size: 14px;
+}
